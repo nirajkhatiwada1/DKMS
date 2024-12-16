@@ -4,31 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duplicate Key Management System</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <!-- Background with lock and key -->
-    <div class="background">
-        <img src="assets/lock-key.jpg" alt="Lock and Key Background">
-    </div>
-
-    <!-- Header with fading animation -->
-    <header class="fade-out">
-        <h1>Duplicate Key Management System</h1>
+    <header>
+        <h1>Welcome to Key Management System</h1>
     </header>
-
-    <!-- Login Form -->
-    <div class="login-container">
-        <form id="loginForm">
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Enter your .gov email" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" placeholder="Enter password" required>
-            <button type="submit">Login</button>
-            <p id="errorMessage" class="error"></p>
-        </form>
-    </div>
-
-    <script src="script.js"></script>
+    <main>
+        <div class="button-container">
+            <a href="/duplicate-request"><button>Duplicate Key Request</button></a>
+            <a href="/find-key-info"><button>Find Key Information</button></a>
+            <a href="/request-key"><button>Key Request</button></a>
+            <a href="/check-status"><button>Check Duplicate Key Request Status</button></a>
+        </div>
+    </main>
 </body>
 </html>
