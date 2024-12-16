@@ -5,7 +5,7 @@ body {
     background-position: center center; /* Centers the image */
     height: 100vh; /* Full viewport height */
     margin: 0; /* Removes default body margin */
-    color: white; /* Text color for better readability */
+    color: red; /* Text color for better readability */
     text-align: center; /* Centers the text */
     font-family: Arial, sans-serif;
 }
