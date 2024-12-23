@@ -12,6 +12,19 @@
     <link rel="request-key" href="requset-key.html">
     <link rel="check-status" href="check-status.html">
     <link rel="Back to Home" href="index.html">
+      <title>DKMS</title>
+  <script>
+    async function fetchKeyInfo() {
+      const response = await fetch('http://localhost:3000/key-information');
+      const data = await response.json();
+      console.log(data);
+      alert(JSON.stringify(data)); // Display data (example usage)
+    }
+  </script>
+</head>
+<body>
+  <button onclick="fetchKeyInfo()">View Key Information</button>
+</body>
 </head>
 <body>
     <header>
