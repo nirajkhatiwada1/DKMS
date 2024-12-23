@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    function fetchData() {
-    fetch("http://localhost:3000/fetch-data")
-        .then(response => response.json())
-        .then(data => {
-            let html = data.map(row => `Name: ${row.Name}, Employee ID: ${row.Employee_ID}, Room No: ${row.Room_No}`).join("<br>");
-            document.getElementById("dataDisplay").innerHTML = html;
-        })
-        .catch(error => {
-            console.error("Error fetching data:", error);
-        });
-}
-<head>
+   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duplicate Key Management System</title>
