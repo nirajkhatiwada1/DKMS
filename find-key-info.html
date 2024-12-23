@@ -12,7 +12,19 @@
         <label for="Room No">Enter Room No:</label>
         <input type="text" id="RoomNo" name="RoomNo" required>
         <button type="submit">Submit Request</button>
+        <script>
+    async function fetchKeyInfo() {
+      const response = await fetch('http://localhost:3000/key_information');
+      const data = await response.json();
+      console.log(data);
+      alert(JSON.stringify(data)); // Display data (example usage)
+    }
+  </script>
+</head>
+<body>
+  <button onclick="fetchKeyInfo()">Submit Request</button>
     </form>
+    <body>
     <a href="index.html">Back to Home</a>
 </body>
 </html>
