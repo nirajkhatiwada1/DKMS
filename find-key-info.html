@@ -10,21 +10,9 @@
     <h2>Find key information</h2>
     <form action="#" method="POST">
         <label for="Room No">Enter Room No:</label>
-        <input type="text" id="RoomNo" name="RoomNo" required>
-        
-        <script>
-    async function fetchKeyInfo() {
-      const response = await fetch('http://localhost:3000/key_information');
-      const data = await response.json();
-      console.log(data);
-      alert(JSON.stringify(data)); // Display data (example usage)
-    }
-  </script>
+        <input type="text" id="RoomNo" name="RoomNo" required>       
 </head>
-<body>
-  <button onclick="fetchKeyInfo()">Submit Request</button>
-    </form>
-    <body>
     <a href="index.html">Back to Home</a>
+        <a href="server.js">submit</a>
 </body>
 </html>
