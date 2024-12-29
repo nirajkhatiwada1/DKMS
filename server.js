@@ -19,8 +19,8 @@ db.connect((err) => {
   console.log('Connected to MySQL database.');
 });
 
-// Endpoint to get data from Key_Information
-app.get('/key-information', (req, res) => {
+// Endpoint to get data from key_information
+app.get('/key_information', (req, res) => {
   const sql = 'SELECT * FROM Key_Information';
   db.query(sql, (err, results) => {
     if (err) throw err;
@@ -30,5 +30,5 @@ app.get('/key-information', (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+  console.log(`Server running at http://localhost:${port:3000}`);
 });
